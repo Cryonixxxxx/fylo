@@ -1,0 +1,852 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    width: 100%;
+    max-width: 480px;   
+    min-height: 100vh;
+    padding: 15px;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #dadada;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+header img {
+    height: 40px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profiles { 
+    display: flex;
+    align-items: center; 
+    gap: 15px;
+    line-height: 1,5;
+    margin-bottom: 20px;
+}
+.tekst {
+    display: block;
+}
+
+.profiles img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+.welcome {
+    margin-bottom: 20px;
+}
+
+.welcome h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.welcome p {
+    color: #999;
+    font-size: 14px;
+}
+
+.card {
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-header button {
+    background-color: transparent;
+    border: 1px solid #8efb2a;
+    color: #8efb2a;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card-header span {
+    background-color: #2d3b1c;
+    color: #8efb2a;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+.stats {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.stat-box {
+    flex: 1;
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    text-align: left;
+}
+
+.stat-box img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 10px;
+}
+
+.stat-box span {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.stat-box h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.stat-box small {
+    color: #777;
+    margin-top: 4px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background-color: #444;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.fill {
+    width: 32%;
+    height: 100%;
+    background-color: #8efb2a;
+}
+
+.kcal {
+    text-align: right;
+    color: #8efb2a;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.macro-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.macro {
+    flex: 1;
+}
+
+.macro h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.macro p {
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.small-progress {
+    width: 100%;
+    height: 8px;
+    background-color: #444;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.green {
+    background-color: #8efb2a;
+    width: 15%;
+    height: 100%;
+}
+
+.blue {
+    background-color: #2ec7ff;
+    width: 26%;
+    height: 100%;
+}
+
+.yellow {
+    background-color: #ffe94d;
+    width: 18%;
+    height: 100%;
+}
+
+.training {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.training img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.training h3 {
+    margin-bottom: 5px;
+}
+
+.training p {
+    color: #999;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.training button {
+    background: none;
+    border: 1px solid #8efb2a;
+    color: #8efb2a;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.goal-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.goal-footer span:first-child {
+    color: #999;
+}
+
+.goal-footer span:last-child {
+    color: #8efb2a;
+    font-weight: bold;
+}
+
+.weight-fill {
+    width: 26%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #8efb2a;
+}
+
+canvas {
+    width: 100%;
+    height: 200px;
+}
+
+.bottom-nav {
+    position: sticky;
+    bottom: 0;
+    background-color: #000;
+    padding: 10px 0;
+}
+
+.bottom-nav span {
+    color: #999;
+    font-size: 12px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: #777;
+
+    gap: 5px;
+    padding: 5px;
+    min-width: 60px;
+}
+
+.nav-links img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.nav-links a.active span {
+    color: #8EF230;
+}
+
+#weekChart {
+    width: 100%;
+    height: 250px;
+}
+#weightChart {
+    width: 100%;
+    height: 220px;
+}
+
+.chart-container {
+    width: 375px;
+    height: 200px;
+    position: relative;
+}
+
+.chart-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+header li {
+    list-style: none;
+}
+
+.overzicht-box {
+    flex: 1;
+    background: #1E1E1E;
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    text-align: left;
+    line-height: 2;
+}
+
+.overzicht-box img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 10px;
+}
+
+.overzicht-box span {
+    color: #dadada;
+    font-size: 12px;
+}
+
+.card-header a {
+    color: #8EF230;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.goal-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.goal-item p {
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.blue-fill {
+    background: #2ec7ff;
+}
+
+.blue-text {
+    color: #2ec7ff;
+}
+
+.mini-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.mini-card {
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 10px;
+    position: relative;
+}
+
+.mini-card small {
+    color: #888;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.mini-card strong {
+    display: block;
+    margin-top: 8px;
+    color: #dadada;
+}
+
+.mini-card canvas {
+    width: 100%;
+    height: 40px !important;
+}
+
+.setting-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.setting-row:last-child {
+    border-bottom: none;
+}
+
+.setting-row span:last-child {
+    color: #999;
+}
+
+.setting-row.logout span:last-child {
+    color: #ff4d4f;
+    cursor: pointer;
+}
+
+.switch {
+    position: relative;
+    width: 46px;
+    height: 24px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background: #444;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 3px;
+    top: 3px;
+    background: #dadada;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.switch input:checked + .slider {
+    background: #8EF230;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(22px);
+}
+
+.week-selector {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.week-selector button {
+    flex: 1;
+    background: #222;
+    border: 1px solid #333;
+    color: #aaa;
+    padding: 10px 0;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.week-selector .active {
+    background: #8EF230;
+    color: #000;
+    font-weight: bold;
+}
+
+.week-dates {
+    display: flex;
+    justify-content: space-between;
+    color: #999;
+    padding: 0 8px;
+}
+
+.muscle-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.muscle-box {
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+}
+
+.muscle-box img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 6px;
+}
+
+.muscle-box span {
+    font-size: 12px;
+    color: #999;
+}
+
+.push-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.push-header img {
+    width: 50px;
+    height: 50px;
+}
+
+.push-header h3 {
+    margin-bottom: 4px;
+}
+
+.push-header p {
+    color: #888;
+    font-size: 12px;
+}
+
+.push-info {
+    margin-left: auto;
+    text-align: right;
+    color: #777;
+    font-size: 12px;
+}
+
+.today-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 15px;
+}
+
+.today-header span {
+    color: #888;
+}
+
+.exercise-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 12px;
+
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.exercise-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.exercise-image {
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    background: #ddd;
+    color: #444;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.exercise-card h4 {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.exercise-card p {
+    color: #888;
+    font-size: 11px;
+}
+
+.completed {
+    text-align: right;
+}
+
+.completed small {
+    display: block;
+    color: #888;
+}
+
+.completed span {
+    color: #8EF230;
+    font-size: 12px;
+}
+
+.period-select {
+    background: #222;
+    border: 1px solid #444;
+    color: #dadada;
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+
+.calorie-overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calorie-stat {
+    text-align: center;
+}
+
+.calorie-stat small {
+    color: #777;
+}
+
+.calorie-gauge {
+    text-align: center;
+}
+
+.gauge-circle {
+    width: 110px;
+    height: 55px;
+    border-top: 6px solid #8EF230;
+    border-left: 6px solid #555;
+    border-right: 6px solid #555;
+    border-radius: 110px 110px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.gauge-circle span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gauge-circle small {
+    color: #888;
+}
+
+.calorie-gauge p {
+    color: #8EF230;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.meal-card {
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.meal-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.meal-header span {
+    color: #8EF230;
+    font-weight: bold;
+}
+
+.meal-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.water-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.water-header span {
+    color: #8EF230;
+    font-weight: bold;
+}
+
+.water-grid {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.glass {
+    width: 18px;
+    height: 28px;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+.glass.filled {
+    background: #29b6ff;
+    border-color: #29b6ff;
+}
+
+.water-count {
+    text-align: right;
+    color: #999;
+    margin-top: 12px;
+}
+
+.insight-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.insight-box {
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.insight-box small {
+    color: #888;
+}
+
+.insight-box h3 {
+    margin: 8px 0;
+}
+
+.insight-box p {
+    color: #999;
+    font-size: 12px;
+}
+
+.green-text {
+    color: #8EF230
+}
+
+.calendar-month {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #dadada;
+}
+
+.calendar-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.calendar-nav button {
+    background: transparent;
+    border: none;
+    color: #dadada;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.calendar-days {
+    margin-bottom: 15px;
+    color: #888;
+    font-size: 13px;
+}
+
+.calendar-grid span {
+    width: 36px;
+    height: 36px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.calendar-grid .inactive {
+    color: #555;
+}
+
+.calendar-grid .active-day {
+    background: #8EF230;
+    color: #000;
+    font-weight: bold;
+}
+
+@media (max-width: 400px) {
+    .app {
+        padding: 10px;
+    }
+
+    .nav-links img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+}

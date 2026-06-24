@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fylö V2</title>
+
+    <link rel="icon" href="Logo Fylö.PNG" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header>
+        <img src="ico en img/Menu.png" alt="Menu">
+
+        <img src="ico en img/Logo Fylö.PNG" alt="Logo">
+
+        <div class="profile">
+            <li>
+            <a href="profiel.html">
+            <img src="ico en img/profiel.jpg" alt="Profiel">
+            </a>
+            </li>
+        </div>
+    </header>
+
+
+    <section class="welcome">
+        <h1>Je Progressie</h1>
+        <p>Bekijk je resultaten</p>
+    </section>
+
+    <div class="card">
+        <h2>Gewicht</h2>
+
+    <div class="chart-container">
+        <canvas id="weightChart"></canvas>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js" defer></script>
+    </div>
+
+    </div>
+
+    <section class="card">
+        <h2>Wekelijkse stappen</h2>
+
+        <canvas id="weekChart"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+
+    </section>
+
+    <section class="card">
+        <h2>Trainingsduur</h2>
+
+    <div class="chart-container">
+        <canvas id="trainingChart"></canvas>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js" defer></script>
+    </div>
+
+    </section>
+
+
+    <section class="card">
+
+        <div class="card">
+    <div class="card-header">
+        <h2>Activiteit Kalender</h2>
+
+        <div class="calendar-nav">
+            <button>&lt;</button>
+            <button>&gt;</button>
+        </div>
+    </div>
+
+    <div class="calendar-month">Mei 2026</div>
+
+    <div class="calendar-grid calendar-days">
+        <span>Ma</span>
+        <span>Di</span>
+        <span>Wo</span>
+        <span>Do</span>
+        <span>Vr</span>
+        <span>Za</span>
+        <span>Zo</span>
+    </div>
+
+    <div class="calendar-grid">
+        <span class="inactive">27</span>
+        <span class="inactive">28</span>
+        <span class="inactive">29</span>
+        <span class="inactive">30</span>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+
+        <span>4</span>
+        <span>5</span>
+        <span class="active-day">6</span>
+        <span>7</span>
+        <span class="active-day">8</span>
+        <span>9</span>
+        <span>10</span>
+
+        <span>11</span>
+        <span>12</span>
+        <span class="active-day">13</span>
+        <span class="active-day">14</span>
+        <span>15</span>
+        <span>16</span>
+        <span>17</span>
+
+        <span>18</span>
+        <span class="active-day">19</span>
+        <span class="active-day">20</span>
+        <span>21</span>
+        <span>22</span>
+        <span>23</span>
+        <span>24</span>
+
+        <span>25</span>
+        <span>26</span>
+        <span>27</span>
+        <span>28</span>
+        <span>29</span>
+        <span class="active-day">30</span>
+        <span>31</span>
+    </div>
+</div>
+    </section>
+
+    <section class="card">
+        <h2>Statistieken Overzicht</h2>
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <img src="ico en img/kcal.png">
+                <h3>86.464</h3>
+                <span>kcal verbrand</span>
+            </div>
+
+            <div class="stat-box">
+                <img src="ico en img/dumbel.png">
+                <h3>32</h3>
+                <span>Workouts</span>
+            </div>
+
+            <div class="stat-box">
+                <img src="ico en img/clock.png">
+                <h3>48u 40m</h3>
+                <span>Totale duur</span>
+            </div>
+
+            <div class="stat-box">
+                <img src="ico en img/line.png">
+                <h3>32</h3>
+                <span>Actieve dagen</span>
+            </div>
+
+        </div>
+    </section>
+
+    <nav class="bottom-nav"> 
+    <ul class="nav-links">
+    <li>
+      <a href="index.html">
+        <img src="ico en img/Home.png">
+        <span>Home</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="progressie.html" class="active">
+        <img src="ico en img/Bar chart1.png">
+        <span>Progressie</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="training.html">
+        <img src="ico en img/dumbell.png">
+        <span>Training</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="voeding.html">
+        <img src="ico en img/apple.png">
+        <span>Voeding</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="profiel.html">
+        <img src="ico en img/User.png">
+        <span>Profiel</span>
+      </a>
+    </li>
+
+  </ul>
+</nav>
+
+</div>
+
+</body>
+</html>

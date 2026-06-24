@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fylö V2</title>
+
+    <link rel="icon" href="Logo Fylö.PNG" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header>
+        <img src="ico en img/Menu.png" alt="Menu">
+
+        <img src="ico en img/Logo Fylö.PNG" alt="Logo">
+
+        <div class="profile">
+            <li>
+            <a href="profiel.html">
+            <img src="ico en img/profiel.jpg" alt="Profiel">
+            </a>
+            </li>
+        </div>
+    </header>
+
+    <section class="welcome">
+        <h1>Goedemorgen, Beau</h1>
+        <p>Klaar om vandaag weer sterker te worden?</p>
+    </section>
+
+    <section class="card">
+        <h2>Vandaag</h2>
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <img src="ico en img/shoe.png">
+                <span>Stappen</span>
+                <h3>2530</h3>
+                <small>/7500</small>
+            </div>
+
+            <div class="stat-box">
+                <img src="ico en img/kcal.png">
+                <span>Calorieën</span>
+                <h3>764</h3>
+                <small>/2400</small>
+            </div>
+
+            <div class="stat-box">
+                <img src="ico en img/water.png">
+                <span>Water</span>
+                <h3>0.6L</h3>
+                <small>/3.5L</small>
+            </div>
+
+            <div class="stat-box">
+                <img src="ico en img/dumbel.png">
+                <span>Training</span>
+                <h3>14:30</h3>
+                <small>Gepland</small>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="card">
+
+        <div class="card-header">
+            <h2>Voeding vandaag</h2>
+
+            <a href="voeding.html#maaltijden" class="meal-btn">
+                <button>+ Maaltijden toevoegen</button>
+            </a>
+        </div>
+
+        <div class="progress-bar">
+            <div class="fill"></div>
+        </div>
+
+        <p class="kcal">
+            764 / 2400 kcal
+        </p>
+
+        <div class="macro-container">
+
+            <div class="macro">
+                <h3>Koolhydraten</h3>
+                <p>34 / 320 g</p>
+
+                <div class="small-progress">
+                    <div class="green"></div>
+                </div>
+            </div>
+
+            <div class="macro">
+                <h3>Eiwitten</h3>
+                <p>42 / 160 g</p>
+
+                <div class="small-progress">
+                    <div class="blue"></div>
+                </div>
+            </div>
+
+            <div class="macro">
+                <h3>Vetten</h3>
+                <p>12 / 72 g</p>
+
+                <div class="small-progress">
+                    <div class="yellow"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>Training van vandaag</h2>
+
+        <div class="training">
+
+            <img src="ico en img/push.png" alt="Push day">
+
+            <div>
+
+                <h3>Push Day</h3>
+
+                <p>
+                    Borst, Schouders, Triceps
+                </p>
+
+              <a href="training.html#schema">
+                <button>
+                    Bekijk Schema
+                </button>
+              </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Doel voortgang</h2>
+
+        <p>72kg -> 64kg</p>
+
+        <div class="progress-bar">
+            <div class="fill weight-fill"></div>
+        </div>
+
+        <div class="goal-footer">
+            <span>Nog 6kg te gaan</span>
+            <span>26%</span>
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <div class="card-header">
+            <h2>Challenge vandaag</h2>
+            <span>+50 punten</span>
+        </div>
+
+        <label>
+            <input type="checkbox" checked>
+            20 push ups
+        </label>
+
+        <label>
+            <input type="checkbox" checked>
+            3.5L water drinken
+        </label>
+
+        <label>
+            <input type="checkbox">
+            7500 stappen halen
+        </label>
+
+    </section>
+
+
+  <div class="card">
+    <h2>Wekelijkse progressie</h2>
+
+    <canvas id="weekChart"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+
+  </div>
+  
+  <nav class="bottom-nav"> 
+    <ul class="nav-links">
+    <li>
+      <a href="index.html" class="active">
+        <img src="ico en img/Home1.png">
+        <span>Home</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="progressie.html">
+        <img src="ico en img/Bar chart.png">
+        <span>Progressie</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="training.html">
+        <img src="ico en img/dumbell.png">
+        <span>Training</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="voeding.html">
+        <img src="ico en img/apple.png">
+        <span>Voeding</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="profiel.html">
+        <img src="ico en img/User.png">
+        <span>Profiel</span>
+      </a>
+    </li>
+
+  </ul>
+</nav>
+
+</div>
+
+</body>
+</html>

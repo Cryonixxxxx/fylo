@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fylö V2</title>
+
+    <link rel="icon" href="Logo Fylö.PNG" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header>
+        <img src="ico en img/Menu.png" alt="Menu">
+
+        <img src="ico en img/Logo Fylö.PNG" alt="Logo">
+
+        <div class="profile">
+            <li>
+            <a href="profiel.html">
+            <img src="ico en img/profiel.jpg" alt="Profiel">
+            </a>
+            </li>
+        </div>
+    </header>
+
+
+    <section class="profiles">
+
+        <img src="ico en img/profiel.jpg">
+      <div class="tekst">  
+        <h2>Beau Geldof</h2>
+        <span>Beau_WKP</span>
+      <div class="card-header">  
+        <span>Level 33</span>
+      </div>
+
+      </div>
+
+    </section>
+
+    <div class="card">
+        <div class="card-header">
+            <h2>Overzicht</h2>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <img src="ico en img/dumbelll.png">
+                <span>Workouts</span>
+                <h3>32</h3>
+                <small>Totaal</small>
+            </div>
+
+            <div class="stat-box">
+                <img src="ico en img/agenda.png">
+                <span>Actieve dagen</span>
+                <h3>19</h3>
+                <small>Deze maand</small>
+            </div>
+
+            <div class="stat-box">
+                <img src="ico en img/streak.png">
+                <span>Streak</span>
+                <h3>11</h3>
+                <small>Dagen</small>
+            </div>
+
+            <div class="stat-box">
+                <img src="ico en img/klok.png">
+                <span>Totale tijd</span>
+                <h3>48u 40m</h3>
+                <small>Totaal</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2>Mijn Doelen</h2>
+            <a href="#">Bekijk alles</a>
+        </div>
+
+        <div class="goal-item">
+            <div class="goal-top">
+                <span>Afvallen</span>
+                <span class="green-text">26%</span>
+            </div>
+
+            <p>72 kg -> 64 kg</p>
+
+            <div class="progress-bar">
+                <div class="fill" style="width:26%"></div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="goal-item">
+            <div class="goal-top">
+                <span>Spiermassa Opbouwen</span>
+                <span class="blue-text">61%</span>
+            </div>
+
+            <p>61 kg -> 65 kg</p>
+
+            <div class="progress-bar">
+                <div class="fill blue-fill" style="width:61%"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2>Statistieken</h2>
+            <a href="#">Bekijk alles</a>
+        </div>
+
+        <div class="mini-stats">
+
+            <div class="mini-card">
+                <small>Gewicht</small>
+                <canvas id="gewichtChart"></canvas>
+                <strong>70 kg</strong>
+            </div>
+
+            <div class="mini-card">
+                <small>Lichaamsvet</small>
+                <canvas id="vetChart"></canvas>
+                <strong>12.4 %</strong>
+            </div>
+
+            <div class="mini-card">
+                <small>BMI</small>
+                <canvas id="bmiChart"></canvas>
+                <strong>21.8</strong>
+            </div>
+
+            <div class="mini-card">
+                <small>Hartslag</small>
+                <canvas id="hartslagChart"></canvas>
+                <strong>63 bpm</strong>
+            </div>
+
+           
+
+        </div>
+    </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="script.js" defer></script>
+            
+    <div class="card">
+        <h2>Persoonlijke informatie</h2>
+
+        <div class="setting-row">
+            <span>Naam</span>
+            <span>Beau Geldof ></span>
+        </div>
+
+        <div class="setting-row">
+            <span>Geboortedatum</span>
+            <span>28 April 2010 ></span>
+        </div>
+
+        <div class="setting-row">
+            <span>Gewicht</span>
+            <span>62,6 kg ></span>
+        </div>
+
+        <div class="setting-row">
+            <span>Lengte</span>
+            <span>172 cm ></span>
+        </div>
+
+        <div class="setting-row">
+            <span>Geslacht</span>
+            <span>Man ></span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Instellingen</h2>
+
+        <div class="setting-row">
+            <span>Doelen & Voorkeuren</span>
+            <span>></span>
+        </div>
+
+        <div class="setting-row">
+            <span>Meldingen</span>
+
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="setting-row">
+            <span>Donkere Modus</span>
+
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="setting-row">
+            <span>Taal</span>
+            <span>Nederlands ></span>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <h2>Account</h2>
+
+        <div class="setting-row">
+            <span>Wijzig wachtwoord</span>
+            <span>></span>
+        </div>
+
+        <div class="setting-row">
+            <span>Privacy & Beveiliging</span>
+            <span>></span>
+        </div>
+
+        <div class="setting-row logout">
+            <span>Uitloggen</span>
+        </div>
+    </div>
+
+
+    <nav class="bottom-nav"> 
+    <ul class="nav-links">
+    <li>
+      <a href="index.html">
+        <img src="ico en img/Home.png">
+        <span>Home</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="progressie.html">
+        <img src="ico en img/Bar chart.png">
+        <span>Progressie</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="training.html">
+        <img src="ico en img/dumbell.png">
+        <span>Training</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="voeding.html">
+        <img src="ico en img/apple.png">
+        <span>Voeding</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="profiel.html" class="active">
+        <img src="ico en img/User1.png">
+        <span>Profiel</span>
+      </a>
+    </li>
+
+  </ul>
+</nav>
+
+</div>
+
+</body>
+</html>
