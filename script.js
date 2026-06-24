@@ -119,7 +119,7 @@ createChart('gewichtChart', {
         labels: [1,2,3,4,5,6],
         datasets: [{
             data: [73,72.5,72,71,70,70.4],
-            borderColor: '#9CFF2E'
+            borderColor: '#8EF230'
         }]
     }
 });
@@ -131,7 +131,7 @@ createChart('vetChart', {
         labels: [1,2,3,4,5,6],
         datasets: [{
             data: [14.2,13.8,13.3,12.4,13.0,12.6],
-            borderColor: '#9CFF2E'
+            borderColor: '#8EF230'
         }]
     }
 });
@@ -143,7 +143,7 @@ createChart('bmiChart', {
         labels: [1,2,3,4,5,6],
         datasets: [{
             data: [21.3,21.8,21.7,21.1,21.9,21.7],
-            borderColor: '#9CFF2E'
+            borderColor: '#8EF230'
         }]
     }
 });
@@ -155,7 +155,8 @@ createChart('hartslagChart', {
         labels: [1,2,3,4,5,6,7,8],
         datasets: [{
             data: [62,65,62,65,62,68,60,63],
-            borderColor: '#9CFF2E'
+            borderColor: '#8EF230'
         }]
     }
 });
+

@@ -836,6 +836,55 @@ header li {
     font-weight: bold;
 }
 
+body.light {
+    background-color: #f5f5f5;
+    color: #111;
+}
+
+body.light .card {
+    background-color: #ffffff;
+}
+
+body.light .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+body.light .stat-box,
+body.light .mini-card,
+body.light .overzicht-box,
+body.light .exercise-card,
+body.light .meal-card,
+body.light .insight-box, 
+body.light .muscle-box,
+body.light .week-selector button {
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+body.light .welcome p,
+body.light .stat-box span,
+body.light .macro p,
+body.light .exercise-card p,
+body.light .completed small,
+body.light .meal-item,
+body.light .water-count {
+    color: #555;
+}
+
+body.light .bottom-nav {
+    background-color: #fff;
+}
+
+body.light .nav-links a {
+    color: #444;
+}
+
+body.light .week-selector button.active {
+    background-color: #8EF230;
+    border-color: #ddd;
+}
+
 @media (max-width: 400px) {
     .app {
         padding: 10px;
